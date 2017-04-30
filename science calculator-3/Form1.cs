@@ -21,23 +21,20 @@ namespace science_calculator_3
             InitializeComponent();
         }
 
-        private void standardToolStripMenuItem_Click(object sender, EventArgs e) //第一步
-        {
-            this.Width = 220;
-            result.Width = 170;
-        }
-
-        private void scientificToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Width = 420;
-            result.Width = 370;
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             this.Width = 220;
             result.Width = 170;
         }
+
+
+
+        #region Function
+
+
+
+        #region Stnadard
 
         private void Button_Click(object sender, EventArgs e) //第三步
         {
@@ -118,140 +115,11 @@ namespace science_calculator_3
             }
         }
 
-        private void button_п_Click(object sender, EventArgs e) //第九步
-        {
-            result.Text = "3.1415926";
-        }
-
-        private void button_Log_Click(object sender, EventArgs e) //第十步
-        {
-            double ilog = Double.Parse(result.Text);
-            equation.Text = System.Convert.ToString("log" + "(" + (result.Text) + ")");
-            ilog = Math.Log10(ilog);
-            result.Text = System.Convert.ToString(ilog);
-        }
-
-        private void button_Sqrt_Click(object sender, EventArgs e) 
-        {
-            double sq = Double.Parse(result.Text);
-            equation.Text = System.Convert.ToString("Sqrt" + "(" + (result.Text) + ")");
-            sq  = Math.Sqrt(sq);
-            result.Text = System.Convert.ToString(sq);
-        }
-
-        private void button_Sinh_Click(object sender, EventArgs e)
-        {
-            double qSinh = Double.Parse(result.Text);
-            equation.Text = System.Convert.ToString("Sinh" + "(" + (result.Text) + ")");
-            qSinh = Math.Sinh(qSinh);
-            result.Text = System.Convert.ToString(qSinh);
-        }
-
-        private void button_Sin_Click(object sender, EventArgs e)
-        {
-            double qSin = Double.Parse(result.Text);
-            equation.Text = System.Convert.ToString("Sin" + "(" + (result.Text) + ")");
-            qSin = Math.Sin(qSin);
-            result.Text = System.Convert.ToString(qSin);
-        }
-
-        private void button_Cosh_Click(object sender, EventArgs e)
-        {
-            double qCosh = Double.Parse(result.Text);
-            equation.Text = System.Convert.ToString("Cosh" + "(" + (result.Text) + ")");
-            qCosh = Math.Cosh(qCosh);
-            result.Text = System.Convert.ToString(qCosh);
-        }
-
-        private void button_Cos_Click(object sender, EventArgs e)
-        {
-            double qCos = Double.Parse(result.Text);
-            equation.Text = System.Convert.ToString("Cos" + "(" + (result.Text) + ")");
-            qCos = Math.Cos(qCos);
-            result.Text = System.Convert.ToString(qCos);
-        }
-
-        private void button_Tanh_Click(object sender, EventArgs e)
-        {
-            double qTanh = Double.Parse(result.Text);
-            equation.Text = System.Convert.ToString("Tanh" + "(" + (result.Text) + ")");
-            qTanh = Math.Tanh(qTanh);
-            result.Text = System.Convert.ToString(qTanh);
-        }
-
-        private void button_Tan_Click(object sender, EventArgs e)
-        {
-            double qTan = Double.Parse(result.Text);
-            equation.Text = System.Convert.ToString("Tan" + "(" + (result.Text) + ")");
-            qTan = Math.Tan(qTan);
-            result.Text = System.Convert.ToString(qTan);
-        }
-
-        private void button_Bin_Click(object sender, EventArgs e)
-        {
-            int a = int.Parse(result.Text);
-            result.Text = System.Convert.ToString(a, 2);
-        }
-
-        private void button_Hex_Click(object sender, EventArgs e)
-        {
-            int a = int.Parse(result.Text);
-            result.Text = System.Convert.ToString(a, 16);
-        }
-
-        private void button_Oct_Click(object sender, EventArgs e)
-        {
-            int a = int.Parse(result.Text);
-            result.Text = System.Convert.ToString(a, 8);
-        }
-
-        private void button_Dec_Click(object sender, EventArgs e)
-        {
-            int a = int.Parse(result.Text);
-            result.Text = System.Convert.ToString(a);
-        }
-
-        private void button_square_Click(object sender, EventArgs e)
-        {
-            Double a;
-            a = Convert.ToDouble (result.Text) * Convert.ToDouble(result.Text);
-            result.Text = System.Convert.ToString(a);
-        }
-
-        private void button_cube_Click(object sender, EventArgs e)
-        {
-            Double a;
-            a = Convert.ToDouble(result.Text) * Convert.ToDouble(result.Text) * Convert.ToDouble(result.Text);
-            result.Text = System.Convert.ToString(a);
-        }
-
-        private void button_1_Click(object sender, EventArgs e) //為1/x
-        {
-            Double a;
-            a = Convert.ToDouble(1.0 / Convert.ToDouble(result.Text));
-            result.Text = System.Convert.ToString(a);
-        }
-
-        private void button_2_Click(object sender, EventArgs e) //為ln x
-        {
-            double ilog = Double.Parse(result.Text);
-            equation.Text = System.Convert.ToString("log" + "(" + (result.Text) + ")");
-            ilog = Math.Log(ilog);
-            result.Text = System.Convert.ToString(ilog);
-        }
-
-        private void button_percent_Click(object sender, EventArgs e)
-        {
-            Double a;
-            a = Convert.ToDouble(result.Text) / Convert.ToDouble(100);
-            result.Text = System.Convert.ToString(a);
-        }
-
         private void button_plus_minus_Click(object sender, EventArgs e) //加入正副號的程式
         {
-            if (double .Parse (result.Text)!=0) // 0 是無關正負的，毋須處理。
+            if (double.Parse(result.Text) != 0) // 0 是無關正負的，毋須處理。
             {
-                if (result.Text.IndexOf("-")>=0)
+                if (result.Text.IndexOf("-") >= 0)
                 {
                     result.Text = result.Text.Replace("-", ""); //Replace("-","")的意思是將字串result.Text中的"-"變成""(空字串)，也就是刪除負號變成正數了
                 }
@@ -262,10 +130,162 @@ namespace science_calculator_3
             }
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)  //日期計算
-        {
+        #endregion
 
+        #region Scientific
+
+        int a;
+        Double A;
+
+        // Pi
+        private void button_п_Click(object sender, EventArgs e) //第九步
+        {
+            result.Text = "3.1415926";
         }
+
+        // Log
+        private void button_Log_Click(object sender, EventArgs e) //第十步
+        {
+            A = Double.Parse(result.Text);
+            equation.Text = System.Convert.ToString("log" + "(" + (result.Text) + ")");
+            A = Math.Log10(A);
+            result.Text = System.Convert.ToString(A);
+        }
+
+        // Sqrt
+        private void button_Sqrt_Click(object sender, EventArgs e) 
+        {
+            A = Double.Parse(result.Text);
+            equation.Text = System.Convert.ToString("Sqrt" + "(" + (result.Text) + ")");
+            A  = Math.Sqrt(A);
+            result.Text = System.Convert.ToString(A);
+        }
+
+        // Sinh
+        private void button_Sinh_Click(object sender, EventArgs e)
+        {
+            A = Double.Parse(result.Text);
+            equation.Text = System.Convert.ToString("Sinh" + "(" + (result.Text) + ")");
+            A = Math.Sinh(A);
+            result.Text = System.Convert.ToString(A);
+        }
+
+        // Sin
+        private void button_Sin_Click(object sender, EventArgs e)
+        {
+            A = Double.Parse(result.Text);
+            equation.Text = System.Convert.ToString("Sin" + "(" + (result.Text) + ")");
+            A = Math.Sin(A);
+            result.Text = System.Convert.ToString(A);
+        }
+
+        // Cosh
+        private void button_Cosh_Click(object sender, EventArgs e)
+        {
+            A = Double.Parse(result.Text);
+            equation.Text = System.Convert.ToString("Cosh" + "(" + (result.Text) + ")");
+            A = Math.Cosh(A);
+            result.Text = System.Convert.ToString(A);
+        }
+
+        // Cos
+        private void button_Cos_Click(object sender, EventArgs e)
+        {
+            A = Double.Parse(result.Text);
+            equation.Text = System.Convert.ToString("Cos" + "(" + (result.Text) + ")");
+            A = Math.Cos(A);
+            result.Text = System.Convert.ToString(A);
+        }
+
+        // Tanh
+        private void button_Tanh_Click(object sender, EventArgs e)
+        {
+            A = Double.Parse(result.Text);
+            equation.Text = System.Convert.ToString("Tanh" + "(" + (result.Text) + ")");
+            A = Math.Tanh(A);
+            result.Text = System.Convert.ToString(A);
+        }
+
+        // Tan
+        private void button_Tan_Click(object sender, EventArgs e)
+        {
+            A = Double.Parse(result.Text);
+            equation.Text = System.Convert.ToString("Tan" + "(" + (result.Text) + ")");
+            A = Math.Tan(A);
+            result.Text = System.Convert.ToString(A);
+        }
+
+        // Binary
+        private void button_Bin_Click(object sender, EventArgs e)
+        {
+            a = int.Parse(result.Text);
+            result.Text = System.Convert.ToString(a, 2);
+        }
+
+        // Hex
+        private void button_Hex_Click(object sender, EventArgs e)
+        {
+            a = int.Parse(result.Text);
+            result.Text = System.Convert.ToString(a, 16);
+        }
+
+        // Oct
+        private void button_Oct_Click(object sender, EventArgs e)
+        {
+            a = int.Parse(result.Text);
+            result.Text = System.Convert.ToString(a, 8);
+        }
+
+        // Dec
+        private void button_Dec_Click(object sender, EventArgs e)
+        {
+            a = int.Parse(result.Text);
+            result.Text = System.Convert.ToString(a);
+        }
+        
+        // square
+        private void button_square_Click(object sender, EventArgs e)
+        {
+            
+            A = Convert.ToDouble (result.Text) * Convert.ToDouble(result.Text);
+            result.Text = System.Convert.ToString(a);
+        }
+
+        // cube
+        private void button_cube_Click(object sender, EventArgs e)
+        {
+           
+            A = Convert.ToDouble(result.Text) * Convert.ToDouble(result.Text) * Convert.ToDouble(result.Text);
+            result.Text = System.Convert.ToString(A);
+        }
+
+        // 1/x
+        private void button_1_Click(object sender, EventArgs e) //為1/x
+        {
+            A = Convert.ToDouble(1.0 / Convert.ToDouble(result.Text));
+            result.Text = System.Convert.ToString(A);
+        }
+
+        // Log
+        private void button_2_Click(object sender, EventArgs e) //為ln x
+        {
+            equation.Text = System.Convert.ToString("log" + "(" + (result.Text) + ")");
+            A = Double.Parse(result.Text);  
+            A = Math.Log(A);
+            result.Text = System.Convert.ToString(A);
+        }
+
+        // percent
+        private void button_percent_Click(object sender, EventArgs e)
+        {
+            A = Convert.ToDouble(result.Text) / Convert.ToDouble(100);
+            result.Text = System.Convert.ToString(A);
+        }
+
+        #endregion
+
+        #region Date
+
         private void btn_cal_Click(object sender, EventArgs e)
         {
             DateTime sdt = dateTimePicker1.Value.Date;
@@ -273,16 +293,12 @@ namespace science_calculator_3
 
             TimeSpan ts = edt - sdt;
 
-            int days = ts . Days;
-
-            difference_two_dates_value.Text = days.ToString() + "Days";
+            difference_two_dates_value.Text = ((int)ts.Days).ToString() + "Days";
         }
 
-        private void dateToolStripMenuItem_Click(object sender, EventArgs e) //Date面板寬度
-        {
-            this.Width = 680;
-            result.Width = 370;
-        }
+        #endregion
+
+        #region Unit Conversion
 
         private void button_convert_to_KGs_Click(object sender, EventArgs e)  //單位轉換
         {
@@ -305,30 +321,144 @@ namespace science_calculator_3
             answer.Text = "Answer:";   //接著更改numericUpDown1&2的屬性maximum值:5000
         }
 
-        private void unitConversionToolStripMenuItem_Click(object sender, EventArgs e)  //單位轉換面板寬度
+        #endregion
+
+
+
+        #endregion
+
+
+        #region ToolStripMenu
+
+        int [] x = new int[]{220,420,680,950};
+        int[] r_x = new int[] { 170,370};
+        int[] y = new int []{347,414};
+
+        // standard ToolStripMenu
+        private void standardToolStripMenuItem_Click(object sender, EventArgs e) //第一步
         {
-            this.Width = 950;
-            result.Width = 370;
-            switch (groupBox2.Visible)
+            this.Width = x[0];
+            result.Width = r_x[0];
+
+            Scientific_groupBox.Visible = false;
+
+            Date_groupBox.Visible = false;
+            Unit_Conversion_groupBox.Visible = false;
+
+            dateToolStripMenuItem.Checked = false;
+            unitConversionToolStripMenuItem.Checked = false;
+        }
+
+        // Scientific ToolStripMenu
+        private void scientificToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Width = x[1];
+            result.Width = r_x[1];
+
+            Scientific_groupBox.Visible = true;
+
+            Date_groupBox.Visible = false;
+            Unit_Conversion_groupBox.Visible = false;
+
+            dateToolStripMenuItem.Checked = false;
+            unitConversionToolStripMenuItem.Checked = false;
+        }
+
+        // Date ToolStripMenu
+        private void dateToolStripMenuItem_Click(object sender, EventArgs e) //Date面板寬度
+        {
+            Scientific_groupBox.Visible = true;
+            this.Width = x[1];
+            result.Width = r_x[1];
+            listBox1.Width = result.Width;
+
+            // 改變 checked
+            switch (Date_groupBox.Visible)
             {
-                case true:
-                    groupBox2.Visible = false;
+                case true:  
+                    Date_groupBox.Visible = false;
+                    dateToolStripMenuItem.Checked = false;
                     break;
                 case false:
-                    groupBox2.Visible = true;
+                    Date_groupBox.Visible = true;
+                    dateToolStripMenuItem.Checked = true;
                     break;
+            }
+
+            // 判斷顯示
+            if (dateToolStripMenuItem.Checked && unitConversionToolStripMenuItem.Checked)
+            {
+                this.Width = x[3];
+                Unit_Conversion_groupBox.Location = new Point(675, 27);
+            }
+            else if (dateToolStripMenuItem.Checked || unitConversionToolStripMenuItem.Checked)
+            {
+                this.Width = x[2];
+                if (unitConversionToolStripMenuItem.Checked)
+                {
+                    Unit_Conversion_groupBox.Location = Date_groupBox.Location;
+                }   
+            }
+            else if (!dateToolStripMenuItem.Checked && !unitConversionToolStripMenuItem.Checked)
+            {
+                this.Width = x[1];
             }
         }
 
+        // Unit Conversion ToolStripMenu
+        private void unitConversionToolStripMenuItem_Click(object sender, EventArgs e)  //單位轉換面板寬度
+        {
+            Scientific_groupBox.Visible = true;
+            this.Width = x[1];
+            result.Width = r_x[1];
+            listBox1.Width = result.Width;
 
+            // 改變 checked
+            switch (Unit_Conversion_groupBox.Visible)
+            {
+                case true:
+                    Unit_Conversion_groupBox.Visible = false;
+                    unitConversionToolStripMenuItem.Checked = false;
+                    break;
+                case false:
+                    Unit_Conversion_groupBox.Visible = true;
+                    unitConversionToolStripMenuItem.Checked = true;
+                    break;
+            }
+
+             // 判斷顯示
+            if (dateToolStripMenuItem.Checked && unitConversionToolStripMenuItem.Checked)
+            {
+                this.Width = x[3];
+                Unit_Conversion_groupBox.Location = new Point(675, 27);
+            }
+            else if (dateToolStripMenuItem.Checked || unitConversionToolStripMenuItem.Checked)
+            {
+                this.Width = x[2];
+                if (unitConversionToolStripMenuItem.Checked)
+                {
+                    Unit_Conversion_groupBox.Location = Date_groupBox.Location;
+                }   
+            }
+            else if (!dateToolStripMenuItem.Checked && !unitConversionToolStripMenuItem.Checked)
+            {
+                this.Width = x[1];
+            }
+        
+
+            
+        }
+
+        // History ToolStripMenu
         private void historyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // 無到有
             if (historyToolStripMenuItem.Checked == true)
             {
-                listBox1.Width = 420;
+                listBox1.Width = result.Width;
                 listBox1.Visible = true;
                 historyToolStripMenuItem.Checked = true;
+                this.Height = y[0];
             }
             // 有到無
             else
@@ -336,9 +466,13 @@ namespace science_calculator_3
                 historyToolStripMenuItem.Checked = false;
                 
                 listBox1.Visible = false;
+                this.Height = y[1];
             }
-            this.Height = 320;
+
         }
+
+        #endregion
+
     }
 }
         

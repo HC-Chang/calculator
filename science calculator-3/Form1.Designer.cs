@@ -56,6 +56,26 @@
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
+            this.equation = new System.Windows.Forms.Label();
+            this.Date_groupBox = new System.Windows.Forms.GroupBox();
+            this.difference_two_dates_value = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btn_cal = new System.Windows.Forms.Button();
+            this.Unit_Conversion_groupBox = new System.Windows.Forms.GroupBox();
+            this.answer = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.button_reset = new System.Windows.Forms.Button();
+            this.button_convert_to_KGs = new System.Windows.Forms.Button();
+            this.button_convert_to_pounds = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.Scientific_groupBox = new System.Windows.Forms.GroupBox();
             this.button_percent = new System.Windows.Forms.Button();
             this.button_Oct = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
@@ -76,30 +96,14 @@
             this.button_Sqrt = new System.Windows.Forms.Button();
             this.button_Log = new System.Windows.Forms.Button();
             this.button_п = new System.Windows.Forms.Button();
-            this.equation = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.difference_two_dates_value = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.btn_cal = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.answer = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.button_reset = new System.Windows.Forms.Button();
-            this.button_convert_to_KGs = new System.Windows.Forms.Button();
-            this.button_convert_to_pounds = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.Standard_groupBox = new System.Windows.Forms.GroupBox();
             this.menuStrip1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.Date_groupBox.SuspendLayout();
+            this.Unit_Conversion_groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.Scientific_groupBox.SuspendLayout();
+            this.Standard_groupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -145,6 +149,7 @@
             // 
             // dateToolStripMenuItem
             // 
+            this.dateToolStripMenuItem.CheckOnClick = true;
             this.dateToolStripMenuItem.Name = "dateToolStripMenuItem";
             this.dateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D3)));
             this.dateToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
@@ -153,6 +158,7 @@
             // 
             // unitConversionToolStripMenuItem
             // 
+            this.unitConversionToolStripMenuItem.CheckOnClick = true;
             this.unitConversionToolStripMenuItem.Name = "unitConversionToolStripMenuItem";
             this.unitConversionToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D4)));
             this.unitConversionToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
@@ -171,7 +177,7 @@
             // 
             // button_Clear
             // 
-            this.button_Clear.Location = new System.Drawing.Point(9, 53);
+            this.button_Clear.Location = new System.Drawing.Point(5, 20);
             this.button_Clear.Margin = new System.Windows.Forms.Padding(2);
             this.button_Clear.Name = "button_Clear";
             this.button_Clear.Size = new System.Drawing.Size(40, 40);
@@ -194,7 +200,7 @@
             // 
             // button_CE
             // 
-            this.button_CE.Location = new System.Drawing.Point(53, 53);
+            this.button_CE.Location = new System.Drawing.Point(49, 20);
             this.button_CE.Margin = new System.Windows.Forms.Padding(2);
             this.button_CE.Name = "button_CE";
             this.button_CE.Size = new System.Drawing.Size(40, 40);
@@ -205,7 +211,7 @@
             // 
             // button_C
             // 
-            this.button_C.Location = new System.Drawing.Point(97, 53);
+            this.button_C.Location = new System.Drawing.Point(93, 20);
             this.button_C.Margin = new System.Windows.Forms.Padding(2);
             this.button_C.Name = "button_C";
             this.button_C.Size = new System.Drawing.Size(40, 40);
@@ -216,7 +222,7 @@
             // 
             // button_plus_minus
             // 
-            this.button_plus_minus.Location = new System.Drawing.Point(141, 53);
+            this.button_plus_minus.Location = new System.Drawing.Point(137, 20);
             this.button_plus_minus.Margin = new System.Windows.Forms.Padding(2);
             this.button_plus_minus.Name = "button_plus_minus";
             this.button_plus_minus.Size = new System.Drawing.Size(40, 40);
@@ -227,7 +233,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(141, 97);
+            this.button5.Location = new System.Drawing.Point(137, 64);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(40, 40);
@@ -238,7 +244,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(97, 97);
+            this.button6.Location = new System.Drawing.Point(93, 64);
             this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(40, 40);
@@ -249,7 +255,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(53, 97);
+            this.button7.Location = new System.Drawing.Point(49, 64);
             this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(40, 40);
@@ -260,7 +266,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(9, 97);
+            this.button8.Location = new System.Drawing.Point(5, 64);
             this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(40, 40);
@@ -271,7 +277,7 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(141, 141);
+            this.button9.Location = new System.Drawing.Point(137, 108);
             this.button9.Margin = new System.Windows.Forms.Padding(2);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(40, 40);
@@ -282,7 +288,7 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(97, 141);
+            this.button10.Location = new System.Drawing.Point(93, 108);
             this.button10.Margin = new System.Windows.Forms.Padding(2);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(40, 40);
@@ -293,7 +299,7 @@
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(53, 141);
+            this.button11.Location = new System.Drawing.Point(49, 108);
             this.button11.Margin = new System.Windows.Forms.Padding(2);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(40, 40);
@@ -304,7 +310,7 @@
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(9, 141);
+            this.button12.Location = new System.Drawing.Point(5, 108);
             this.button12.Margin = new System.Windows.Forms.Padding(2);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(40, 40);
@@ -315,7 +321,7 @@
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(141, 229);
+            this.button13.Location = new System.Drawing.Point(137, 196);
             this.button13.Margin = new System.Windows.Forms.Padding(2);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(40, 40);
@@ -326,7 +332,7 @@
             // 
             // button_equal
             // 
-            this.button_equal.Location = new System.Drawing.Point(97, 229);
+            this.button_equal.Location = new System.Drawing.Point(93, 196);
             this.button_equal.Margin = new System.Windows.Forms.Padding(2);
             this.button_equal.Name = "button_equal";
             this.button_equal.Size = new System.Drawing.Size(40, 40);
@@ -337,7 +343,7 @@
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(53, 229);
+            this.button15.Location = new System.Drawing.Point(49, 196);
             this.button15.Margin = new System.Windows.Forms.Padding(2);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(40, 40);
@@ -348,7 +354,7 @@
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(9, 229);
+            this.button16.Location = new System.Drawing.Point(5, 196);
             this.button16.Margin = new System.Windows.Forms.Padding(2);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(40, 40);
@@ -359,7 +365,7 @@
             // 
             // button17
             // 
-            this.button17.Location = new System.Drawing.Point(141, 185);
+            this.button17.Location = new System.Drawing.Point(137, 152);
             this.button17.Margin = new System.Windows.Forms.Padding(2);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(40, 40);
@@ -370,7 +376,7 @@
             // 
             // button18
             // 
-            this.button18.Location = new System.Drawing.Point(97, 185);
+            this.button18.Location = new System.Drawing.Point(93, 152);
             this.button18.Margin = new System.Windows.Forms.Padding(2);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(40, 40);
@@ -381,7 +387,7 @@
             // 
             // button19
             // 
-            this.button19.Location = new System.Drawing.Point(53, 185);
+            this.button19.Location = new System.Drawing.Point(49, 152);
             this.button19.Margin = new System.Windows.Forms.Padding(2);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(40, 40);
@@ -392,7 +398,7 @@
             // 
             // button20
             // 
-            this.button20.Location = new System.Drawing.Point(9, 185);
+            this.button20.Location = new System.Drawing.Point(5, 152);
             this.button20.Margin = new System.Windows.Forms.Padding(2);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(40, 40);
@@ -400,226 +406,6 @@
             this.button20.Text = "1";
             this.button20.UseVisualStyleBackColor = true;
             this.button20.Click += new System.EventHandler(this.Button_Click);
-            // 
-            // button_percent
-            // 
-            this.button_percent.Location = new System.Drawing.Point(339, 229);
-            this.button_percent.Margin = new System.Windows.Forms.Padding(2);
-            this.button_percent.Name = "button_percent";
-            this.button_percent.Size = new System.Drawing.Size(40, 40);
-            this.button_percent.TabIndex = 41;
-            this.button_percent.Text = "%";
-            this.button_percent.UseVisualStyleBackColor = true;
-            this.button_percent.Click += new System.EventHandler(this.button_percent_Click);
-            // 
-            // button_Oct
-            // 
-            this.button_Oct.Location = new System.Drawing.Point(295, 229);
-            this.button_Oct.Margin = new System.Windows.Forms.Padding(2);
-            this.button_Oct.Name = "button_Oct";
-            this.button_Oct.Size = new System.Drawing.Size(40, 40);
-            this.button_Oct.TabIndex = 40;
-            this.button_Oct.Text = "Oct";
-            this.button_Oct.UseVisualStyleBackColor = true;
-            this.button_Oct.Click += new System.EventHandler(this.button_Oct_Click);
-            // 
-            // button23
-            // 
-            this.button23.Location = new System.Drawing.Point(251, 229);
-            this.button23.Margin = new System.Windows.Forms.Padding(2);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(40, 40);
-            this.button23.TabIndex = 39;
-            this.button23.Text = "Mod";
-            this.button23.UseVisualStyleBackColor = true;
-            this.button23.Click += new System.EventHandler(this.operator_click);
-            // 
-            // button24
-            // 
-            this.button24.Location = new System.Drawing.Point(207, 229);
-            this.button24.Margin = new System.Windows.Forms.Padding(2);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(40, 40);
-            this.button24.TabIndex = 38;
-            this.button24.Text = "Exp";
-            this.button24.UseVisualStyleBackColor = true;
-            this.button24.Click += new System.EventHandler(this.operator_click);
-            // 
-            // button_2
-            // 
-            this.button_2.Location = new System.Drawing.Point(339, 185);
-            this.button_2.Margin = new System.Windows.Forms.Padding(2);
-            this.button_2.Name = "button_2";
-            this.button_2.Size = new System.Drawing.Size(40, 40);
-            this.button_2.TabIndex = 37;
-            this.button_2.Text = "ln x";
-            this.button_2.UseVisualStyleBackColor = true;
-            this.button_2.Click += new System.EventHandler(this.button_2_Click);
-            // 
-            // button_Hex
-            // 
-            this.button_Hex.Location = new System.Drawing.Point(295, 185);
-            this.button_Hex.Margin = new System.Windows.Forms.Padding(2);
-            this.button_Hex.Name = "button_Hex";
-            this.button_Hex.Size = new System.Drawing.Size(40, 40);
-            this.button_Hex.TabIndex = 36;
-            this.button_Hex.Text = "Hex";
-            this.button_Hex.UseVisualStyleBackColor = true;
-            this.button_Hex.Click += new System.EventHandler(this.button_Hex_Click);
-            // 
-            // button_Tan
-            // 
-            this.button_Tan.Location = new System.Drawing.Point(251, 185);
-            this.button_Tan.Margin = new System.Windows.Forms.Padding(2);
-            this.button_Tan.Name = "button_Tan";
-            this.button_Tan.Size = new System.Drawing.Size(40, 40);
-            this.button_Tan.TabIndex = 35;
-            this.button_Tan.Text = "Tan";
-            this.button_Tan.UseVisualStyleBackColor = true;
-            this.button_Tan.Click += new System.EventHandler(this.button_Tan_Click);
-            // 
-            // button_Tanh
-            // 
-            this.button_Tanh.Location = new System.Drawing.Point(207, 185);
-            this.button_Tanh.Margin = new System.Windows.Forms.Padding(2);
-            this.button_Tanh.Name = "button_Tanh";
-            this.button_Tanh.Size = new System.Drawing.Size(40, 40);
-            this.button_Tanh.TabIndex = 34;
-            this.button_Tanh.Text = "Tanh";
-            this.button_Tanh.UseVisualStyleBackColor = true;
-            this.button_Tanh.Click += new System.EventHandler(this.button_Tanh_Click);
-            // 
-            // button_1
-            // 
-            this.button_1.Location = new System.Drawing.Point(339, 141);
-            this.button_1.Margin = new System.Windows.Forms.Padding(2);
-            this.button_1.Name = "button_1";
-            this.button_1.Size = new System.Drawing.Size(40, 40);
-            this.button_1.TabIndex = 33;
-            this.button_1.Text = "1/x";
-            this.button_1.UseVisualStyleBackColor = true;
-            this.button_1.Click += new System.EventHandler(this.button_1_Click);
-            // 
-            // button_Bin
-            // 
-            this.button_Bin.Location = new System.Drawing.Point(295, 141);
-            this.button_Bin.Margin = new System.Windows.Forms.Padding(2);
-            this.button_Bin.Name = "button_Bin";
-            this.button_Bin.Size = new System.Drawing.Size(40, 40);
-            this.button_Bin.TabIndex = 32;
-            this.button_Bin.Text = "Bin";
-            this.button_Bin.UseVisualStyleBackColor = true;
-            this.button_Bin.Click += new System.EventHandler(this.button_Bin_Click);
-            // 
-            // button_Cos
-            // 
-            this.button_Cos.Location = new System.Drawing.Point(251, 141);
-            this.button_Cos.Margin = new System.Windows.Forms.Padding(2);
-            this.button_Cos.Name = "button_Cos";
-            this.button_Cos.Size = new System.Drawing.Size(40, 40);
-            this.button_Cos.TabIndex = 31;
-            this.button_Cos.Text = "Cos";
-            this.button_Cos.UseVisualStyleBackColor = true;
-            this.button_Cos.Click += new System.EventHandler(this.button_Cos_Click);
-            // 
-            // button_Cosh
-            // 
-            this.button_Cosh.Location = new System.Drawing.Point(207, 141);
-            this.button_Cosh.Margin = new System.Windows.Forms.Padding(2);
-            this.button_Cosh.Name = "button_Cosh";
-            this.button_Cosh.Size = new System.Drawing.Size(40, 40);
-            this.button_Cosh.TabIndex = 30;
-            this.button_Cosh.Text = "Cosh";
-            this.button_Cosh.UseVisualStyleBackColor = true;
-            this.button_Cosh.Click += new System.EventHandler(this.button_Cosh_Click);
-            // 
-            // button_cube
-            // 
-            this.button_cube.Location = new System.Drawing.Point(339, 97);
-            this.button_cube.Margin = new System.Windows.Forms.Padding(2);
-            this.button_cube.Name = "button_cube";
-            this.button_cube.Size = new System.Drawing.Size(40, 40);
-            this.button_cube.TabIndex = 29;
-            this.button_cube.Text = "x^3";
-            this.button_cube.UseVisualStyleBackColor = true;
-            this.button_cube.Click += new System.EventHandler(this.button_cube_Click);
-            // 
-            // button_Dec
-            // 
-            this.button_Dec.Location = new System.Drawing.Point(295, 97);
-            this.button_Dec.Margin = new System.Windows.Forms.Padding(2);
-            this.button_Dec.Name = "button_Dec";
-            this.button_Dec.Size = new System.Drawing.Size(40, 40);
-            this.button_Dec.TabIndex = 28;
-            this.button_Dec.Text = "Dec";
-            this.button_Dec.UseVisualStyleBackColor = true;
-            this.button_Dec.Click += new System.EventHandler(this.button_Dec_Click);
-            // 
-            // button_Sin
-            // 
-            this.button_Sin.Location = new System.Drawing.Point(251, 97);
-            this.button_Sin.Margin = new System.Windows.Forms.Padding(2);
-            this.button_Sin.Name = "button_Sin";
-            this.button_Sin.Size = new System.Drawing.Size(40, 40);
-            this.button_Sin.TabIndex = 27;
-            this.button_Sin.Text = "Sin";
-            this.button_Sin.UseVisualStyleBackColor = true;
-            this.button_Sin.Click += new System.EventHandler(this.button_Sin_Click);
-            // 
-            // button_Sinh
-            // 
-            this.button_Sinh.Location = new System.Drawing.Point(207, 97);
-            this.button_Sinh.Margin = new System.Windows.Forms.Padding(2);
-            this.button_Sinh.Name = "button_Sinh";
-            this.button_Sinh.Size = new System.Drawing.Size(40, 40);
-            this.button_Sinh.TabIndex = 26;
-            this.button_Sinh.Text = "Sinh";
-            this.button_Sinh.UseVisualStyleBackColor = true;
-            this.button_Sinh.Click += new System.EventHandler(this.button_Sinh_Click);
-            // 
-            // button_square
-            // 
-            this.button_square.Location = new System.Drawing.Point(339, 53);
-            this.button_square.Margin = new System.Windows.Forms.Padding(2);
-            this.button_square.Name = "button_square";
-            this.button_square.Size = new System.Drawing.Size(40, 40);
-            this.button_square.TabIndex = 25;
-            this.button_square.Text = "x^2";
-            this.button_square.UseVisualStyleBackColor = true;
-            this.button_square.Click += new System.EventHandler(this.button_square_Click);
-            // 
-            // button_Sqrt
-            // 
-            this.button_Sqrt.Location = new System.Drawing.Point(295, 53);
-            this.button_Sqrt.Margin = new System.Windows.Forms.Padding(2);
-            this.button_Sqrt.Name = "button_Sqrt";
-            this.button_Sqrt.Size = new System.Drawing.Size(40, 40);
-            this.button_Sqrt.TabIndex = 24;
-            this.button_Sqrt.Text = "Sqrt";
-            this.button_Sqrt.UseVisualStyleBackColor = true;
-            this.button_Sqrt.Click += new System.EventHandler(this.button_Sqrt_Click);
-            // 
-            // button_Log
-            // 
-            this.button_Log.Location = new System.Drawing.Point(251, 53);
-            this.button_Log.Margin = new System.Windows.Forms.Padding(2);
-            this.button_Log.Name = "button_Log";
-            this.button_Log.Size = new System.Drawing.Size(40, 40);
-            this.button_Log.TabIndex = 23;
-            this.button_Log.Text = "Log";
-            this.button_Log.UseVisualStyleBackColor = true;
-            this.button_Log.Click += new System.EventHandler(this.button_Log_Click);
-            // 
-            // button_п
-            // 
-            this.button_п.Location = new System.Drawing.Point(207, 53);
-            this.button_п.Margin = new System.Windows.Forms.Padding(2);
-            this.button_п.Name = "button_п";
-            this.button_п.Size = new System.Drawing.Size(40, 40);
-            this.button_п.TabIndex = 22;
-            this.button_п.Text = "п";
-            this.button_п.UseVisualStyleBackColor = true;
-            this.button_п.Click += new System.EventHandler(this.button_п_Click);
             // 
             // equation
             // 
@@ -633,24 +419,25 @@
             this.equation.Size = new System.Drawing.Size(0, 18);
             this.equation.TabIndex = 42;
             // 
-            // groupBox1
+            // Date_groupBox
             // 
-            this.groupBox1.Controls.Add(this.difference_two_dates_value);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.dateTimePicker2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.btn_cal);
-            this.groupBox1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(411, 27);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(235, 239);
-            this.groupBox1.TabIndex = 43;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Date";
+            this.Date_groupBox.Controls.Add(this.difference_two_dates_value);
+            this.Date_groupBox.Controls.Add(this.label3);
+            this.Date_groupBox.Controls.Add(this.label2);
+            this.Date_groupBox.Controls.Add(this.dateTimePicker2);
+            this.Date_groupBox.Controls.Add(this.label1);
+            this.Date_groupBox.Controls.Add(this.dateTimePicker1);
+            this.Date_groupBox.Controls.Add(this.btn_cal);
+            this.Date_groupBox.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Date_groupBox.Location = new System.Drawing.Point(411, 27);
+            this.Date_groupBox.Margin = new System.Windows.Forms.Padding(2);
+            this.Date_groupBox.Name = "Date_groupBox";
+            this.Date_groupBox.Padding = new System.Windows.Forms.Padding(2);
+            this.Date_groupBox.Size = new System.Drawing.Size(235, 239);
+            this.Date_groupBox.TabIndex = 43;
+            this.Date_groupBox.TabStop = false;
+            this.Date_groupBox.Text = "Date";
+            this.Date_groupBox.Visible = false;
             // 
             // difference_two_dates_value
             // 
@@ -714,7 +501,6 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(135, 23);
             this.dateTimePicker1.TabIndex = 1;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // btn_cal
             // 
@@ -729,26 +515,26 @@
             this.btn_cal.UseVisualStyleBackColor = false;
             this.btn_cal.Click += new System.EventHandler(this.btn_cal_Click);
             // 
-            // groupBox2
+            // Unit_Conversion_groupBox
             // 
-            this.groupBox2.Controls.Add(this.answer);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.numericUpDown2);
-            this.groupBox2.Controls.Add(this.numericUpDown1);
-            this.groupBox2.Controls.Add(this.button_reset);
-            this.groupBox2.Controls.Add(this.button_convert_to_KGs);
-            this.groupBox2.Controls.Add(this.button_convert_to_pounds);
-            this.groupBox2.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(675, 27);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(235, 239);
-            this.groupBox2.TabIndex = 44;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Unit Conversion";
-            this.groupBox2.Visible = false;
+            this.Unit_Conversion_groupBox.Controls.Add(this.answer);
+            this.Unit_Conversion_groupBox.Controls.Add(this.label5);
+            this.Unit_Conversion_groupBox.Controls.Add(this.label4);
+            this.Unit_Conversion_groupBox.Controls.Add(this.numericUpDown2);
+            this.Unit_Conversion_groupBox.Controls.Add(this.numericUpDown1);
+            this.Unit_Conversion_groupBox.Controls.Add(this.button_reset);
+            this.Unit_Conversion_groupBox.Controls.Add(this.button_convert_to_KGs);
+            this.Unit_Conversion_groupBox.Controls.Add(this.button_convert_to_pounds);
+            this.Unit_Conversion_groupBox.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Unit_Conversion_groupBox.Location = new System.Drawing.Point(675, 27);
+            this.Unit_Conversion_groupBox.Margin = new System.Windows.Forms.Padding(2);
+            this.Unit_Conversion_groupBox.Name = "Unit_Conversion_groupBox";
+            this.Unit_Conversion_groupBox.Padding = new System.Windows.Forms.Padding(2);
+            this.Unit_Conversion_groupBox.Size = new System.Drawing.Size(235, 239);
+            this.Unit_Conversion_groupBox.TabIndex = 44;
+            this.Unit_Conversion_groupBox.TabStop = false;
+            this.Unit_Conversion_groupBox.Text = "Unit Conversion";
+            this.Unit_Conversion_groupBox.Visible = false;
             // 
             // answer
             // 
@@ -852,62 +638,282 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 12;
-            this.listBox1.Location = new System.Drawing.Point(9, 286);
+            this.listBox1.Location = new System.Drawing.Point(7, 309);
             this.listBox1.Margin = new System.Windows.Forms.Padding(2);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(173, 52);
             this.listBox1.TabIndex = 45;
             // 
+            // Scientific_groupBox
+            // 
+            this.Scientific_groupBox.Controls.Add(this.button_percent);
+            this.Scientific_groupBox.Controls.Add(this.button_Oct);
+            this.Scientific_groupBox.Controls.Add(this.button23);
+            this.Scientific_groupBox.Controls.Add(this.button24);
+            this.Scientific_groupBox.Controls.Add(this.button_2);
+            this.Scientific_groupBox.Controls.Add(this.button_Hex);
+            this.Scientific_groupBox.Controls.Add(this.button_Tan);
+            this.Scientific_groupBox.Controls.Add(this.button_Tanh);
+            this.Scientific_groupBox.Controls.Add(this.button_1);
+            this.Scientific_groupBox.Controls.Add(this.button_Bin);
+            this.Scientific_groupBox.Controls.Add(this.button_Cos);
+            this.Scientific_groupBox.Controls.Add(this.button_Cosh);
+            this.Scientific_groupBox.Controls.Add(this.button_cube);
+            this.Scientific_groupBox.Controls.Add(this.button_Dec);
+            this.Scientific_groupBox.Controls.Add(this.button_Sin);
+            this.Scientific_groupBox.Controls.Add(this.button_Sinh);
+            this.Scientific_groupBox.Controls.Add(this.button_square);
+            this.Scientific_groupBox.Controls.Add(this.button_Sqrt);
+            this.Scientific_groupBox.Controls.Add(this.button_Log);
+            this.Scientific_groupBox.Controls.Add(this.button_п);
+            this.Scientific_groupBox.Location = new System.Drawing.Point(197, 55);
+            this.Scientific_groupBox.Name = "Scientific_groupBox";
+            this.Scientific_groupBox.Size = new System.Drawing.Size(184, 249);
+            this.Scientific_groupBox.TabIndex = 46;
+            this.Scientific_groupBox.TabStop = false;
+            this.Scientific_groupBox.Text = "Scientific";
+            // 
+            // button_percent
+            // 
+            this.button_percent.Location = new System.Drawing.Point(137, 197);
+            this.button_percent.Margin = new System.Windows.Forms.Padding(2);
+            this.button_percent.Name = "button_percent";
+            this.button_percent.Size = new System.Drawing.Size(40, 40);
+            this.button_percent.TabIndex = 81;
+            this.button_percent.Text = "%";
+            this.button_percent.UseVisualStyleBackColor = true;
+            // 
+            // button_Oct
+            // 
+            this.button_Oct.Location = new System.Drawing.Point(93, 197);
+            this.button_Oct.Margin = new System.Windows.Forms.Padding(2);
+            this.button_Oct.Name = "button_Oct";
+            this.button_Oct.Size = new System.Drawing.Size(40, 40);
+            this.button_Oct.TabIndex = 80;
+            this.button_Oct.Text = "Oct";
+            this.button_Oct.UseVisualStyleBackColor = true;
+            // 
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(49, 197);
+            this.button23.Margin = new System.Windows.Forms.Padding(2);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(40, 40);
+            this.button23.TabIndex = 79;
+            this.button23.Text = "Mod";
+            this.button23.UseVisualStyleBackColor = true;
+            // 
+            // button24
+            // 
+            this.button24.Location = new System.Drawing.Point(5, 197);
+            this.button24.Margin = new System.Windows.Forms.Padding(2);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(40, 40);
+            this.button24.TabIndex = 78;
+            this.button24.Text = "Exp";
+            this.button24.UseVisualStyleBackColor = true;
+            // 
+            // button_2
+            // 
+            this.button_2.Location = new System.Drawing.Point(137, 153);
+            this.button_2.Margin = new System.Windows.Forms.Padding(2);
+            this.button_2.Name = "button_2";
+            this.button_2.Size = new System.Drawing.Size(40, 40);
+            this.button_2.TabIndex = 77;
+            this.button_2.Text = "ln x";
+            this.button_2.UseVisualStyleBackColor = true;
+            // 
+            // button_Hex
+            // 
+            this.button_Hex.Location = new System.Drawing.Point(93, 153);
+            this.button_Hex.Margin = new System.Windows.Forms.Padding(2);
+            this.button_Hex.Name = "button_Hex";
+            this.button_Hex.Size = new System.Drawing.Size(40, 40);
+            this.button_Hex.TabIndex = 76;
+            this.button_Hex.Text = "Hex";
+            this.button_Hex.UseVisualStyleBackColor = true;
+            // 
+            // button_Tan
+            // 
+            this.button_Tan.Location = new System.Drawing.Point(49, 153);
+            this.button_Tan.Margin = new System.Windows.Forms.Padding(2);
+            this.button_Tan.Name = "button_Tan";
+            this.button_Tan.Size = new System.Drawing.Size(40, 40);
+            this.button_Tan.TabIndex = 75;
+            this.button_Tan.Text = "Tan";
+            this.button_Tan.UseVisualStyleBackColor = true;
+            // 
+            // button_Tanh
+            // 
+            this.button_Tanh.Location = new System.Drawing.Point(5, 153);
+            this.button_Tanh.Margin = new System.Windows.Forms.Padding(2);
+            this.button_Tanh.Name = "button_Tanh";
+            this.button_Tanh.Size = new System.Drawing.Size(40, 40);
+            this.button_Tanh.TabIndex = 74;
+            this.button_Tanh.Text = "Tanh";
+            this.button_Tanh.UseVisualStyleBackColor = true;
+            // 
+            // button_1
+            // 
+            this.button_1.Location = new System.Drawing.Point(137, 109);
+            this.button_1.Margin = new System.Windows.Forms.Padding(2);
+            this.button_1.Name = "button_1";
+            this.button_1.Size = new System.Drawing.Size(40, 40);
+            this.button_1.TabIndex = 73;
+            this.button_1.Text = "1/x";
+            this.button_1.UseVisualStyleBackColor = true;
+            // 
+            // button_Bin
+            // 
+            this.button_Bin.Location = new System.Drawing.Point(93, 109);
+            this.button_Bin.Margin = new System.Windows.Forms.Padding(2);
+            this.button_Bin.Name = "button_Bin";
+            this.button_Bin.Size = new System.Drawing.Size(40, 40);
+            this.button_Bin.TabIndex = 72;
+            this.button_Bin.Text = "Bin";
+            this.button_Bin.UseVisualStyleBackColor = true;
+            // 
+            // button_Cos
+            // 
+            this.button_Cos.Location = new System.Drawing.Point(49, 109);
+            this.button_Cos.Margin = new System.Windows.Forms.Padding(2);
+            this.button_Cos.Name = "button_Cos";
+            this.button_Cos.Size = new System.Drawing.Size(40, 40);
+            this.button_Cos.TabIndex = 71;
+            this.button_Cos.Text = "Cos";
+            this.button_Cos.UseVisualStyleBackColor = true;
+            // 
+            // button_Cosh
+            // 
+            this.button_Cosh.Location = new System.Drawing.Point(5, 109);
+            this.button_Cosh.Margin = new System.Windows.Forms.Padding(2);
+            this.button_Cosh.Name = "button_Cosh";
+            this.button_Cosh.Size = new System.Drawing.Size(40, 40);
+            this.button_Cosh.TabIndex = 70;
+            this.button_Cosh.Text = "Cosh";
+            this.button_Cosh.UseVisualStyleBackColor = true;
+            // 
+            // button_cube
+            // 
+            this.button_cube.Location = new System.Drawing.Point(137, 65);
+            this.button_cube.Margin = new System.Windows.Forms.Padding(2);
+            this.button_cube.Name = "button_cube";
+            this.button_cube.Size = new System.Drawing.Size(40, 40);
+            this.button_cube.TabIndex = 69;
+            this.button_cube.Text = "x^3";
+            this.button_cube.UseVisualStyleBackColor = true;
+            // 
+            // button_Dec
+            // 
+            this.button_Dec.Location = new System.Drawing.Point(93, 65);
+            this.button_Dec.Margin = new System.Windows.Forms.Padding(2);
+            this.button_Dec.Name = "button_Dec";
+            this.button_Dec.Size = new System.Drawing.Size(40, 40);
+            this.button_Dec.TabIndex = 68;
+            this.button_Dec.Text = "Dec";
+            this.button_Dec.UseVisualStyleBackColor = true;
+            // 
+            // button_Sin
+            // 
+            this.button_Sin.Location = new System.Drawing.Point(49, 65);
+            this.button_Sin.Margin = new System.Windows.Forms.Padding(2);
+            this.button_Sin.Name = "button_Sin";
+            this.button_Sin.Size = new System.Drawing.Size(40, 40);
+            this.button_Sin.TabIndex = 67;
+            this.button_Sin.Text = "Sin";
+            this.button_Sin.UseVisualStyleBackColor = true;
+            // 
+            // button_Sinh
+            // 
+            this.button_Sinh.Location = new System.Drawing.Point(5, 65);
+            this.button_Sinh.Margin = new System.Windows.Forms.Padding(2);
+            this.button_Sinh.Name = "button_Sinh";
+            this.button_Sinh.Size = new System.Drawing.Size(40, 40);
+            this.button_Sinh.TabIndex = 66;
+            this.button_Sinh.Text = "Sinh";
+            this.button_Sinh.UseVisualStyleBackColor = true;
+            // 
+            // button_square
+            // 
+            this.button_square.Location = new System.Drawing.Point(137, 21);
+            this.button_square.Margin = new System.Windows.Forms.Padding(2);
+            this.button_square.Name = "button_square";
+            this.button_square.Size = new System.Drawing.Size(40, 40);
+            this.button_square.TabIndex = 65;
+            this.button_square.Text = "x^2";
+            this.button_square.UseVisualStyleBackColor = true;
+            // 
+            // button_Sqrt
+            // 
+            this.button_Sqrt.Location = new System.Drawing.Point(93, 21);
+            this.button_Sqrt.Margin = new System.Windows.Forms.Padding(2);
+            this.button_Sqrt.Name = "button_Sqrt";
+            this.button_Sqrt.Size = new System.Drawing.Size(40, 40);
+            this.button_Sqrt.TabIndex = 64;
+            this.button_Sqrt.Text = "Sqrt";
+            this.button_Sqrt.UseVisualStyleBackColor = true;
+            // 
+            // button_Log
+            // 
+            this.button_Log.Location = new System.Drawing.Point(49, 21);
+            this.button_Log.Margin = new System.Windows.Forms.Padding(2);
+            this.button_Log.Name = "button_Log";
+            this.button_Log.Size = new System.Drawing.Size(40, 40);
+            this.button_Log.TabIndex = 63;
+            this.button_Log.Text = "Log";
+            this.button_Log.UseVisualStyleBackColor = true;
+            // 
+            // button_п
+            // 
+            this.button_п.Location = new System.Drawing.Point(5, 21);
+            this.button_п.Margin = new System.Windows.Forms.Padding(2);
+            this.button_п.Name = "button_п";
+            this.button_п.Size = new System.Drawing.Size(40, 40);
+            this.button_п.TabIndex = 62;
+            this.button_п.Text = "п";
+            this.button_п.UseVisualStyleBackColor = true;
+            // 
+            // Standard_groupBox
+            // 
+            this.Standard_groupBox.Controls.Add(this.button_Clear);
+            this.Standard_groupBox.Controls.Add(this.button_CE);
+            this.Standard_groupBox.Controls.Add(this.button_C);
+            this.Standard_groupBox.Controls.Add(this.button_plus_minus);
+            this.Standard_groupBox.Controls.Add(this.button8);
+            this.Standard_groupBox.Controls.Add(this.button7);
+            this.Standard_groupBox.Controls.Add(this.button13);
+            this.Standard_groupBox.Controls.Add(this.button6);
+            this.Standard_groupBox.Controls.Add(this.button_equal);
+            this.Standard_groupBox.Controls.Add(this.button5);
+            this.Standard_groupBox.Controls.Add(this.button15);
+            this.Standard_groupBox.Controls.Add(this.button12);
+            this.Standard_groupBox.Controls.Add(this.button16);
+            this.Standard_groupBox.Controls.Add(this.button11);
+            this.Standard_groupBox.Controls.Add(this.button17);
+            this.Standard_groupBox.Controls.Add(this.button10);
+            this.Standard_groupBox.Controls.Add(this.button18);
+            this.Standard_groupBox.Controls.Add(this.button9);
+            this.Standard_groupBox.Controls.Add(this.button19);
+            this.Standard_groupBox.Controls.Add(this.button20);
+            this.Standard_groupBox.Location = new System.Drawing.Point(7, 55);
+            this.Standard_groupBox.Name = "Standard_groupBox";
+            this.Standard_groupBox.Size = new System.Drawing.Size(184, 249);
+            this.Standard_groupBox.TabIndex = 47;
+            this.Standard_groupBox.TabStop = false;
+            this.Standard_groupBox.Text = "Standard";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(918, 355);
+            this.ClientSize = new System.Drawing.Size(918, 376);
+            this.Controls.Add(this.Standard_groupBox);
+            this.Controls.Add(this.Scientific_groupBox);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.Unit_Conversion_groupBox);
+            this.Controls.Add(this.Date_groupBox);
             this.Controls.Add(this.equation);
-            this.Controls.Add(this.button_percent);
-            this.Controls.Add(this.button_Oct);
-            this.Controls.Add(this.button23);
-            this.Controls.Add(this.button24);
-            this.Controls.Add(this.button_2);
-            this.Controls.Add(this.button_Hex);
-            this.Controls.Add(this.button_Tan);
-            this.Controls.Add(this.button_Tanh);
-            this.Controls.Add(this.button_1);
-            this.Controls.Add(this.button_Bin);
-            this.Controls.Add(this.button_Cos);
-            this.Controls.Add(this.button_Cosh);
-            this.Controls.Add(this.button_cube);
-            this.Controls.Add(this.button_Dec);
-            this.Controls.Add(this.button_Sin);
-            this.Controls.Add(this.button_Sinh);
-            this.Controls.Add(this.button_square);
-            this.Controls.Add(this.button_Sqrt);
-            this.Controls.Add(this.button_Log);
-            this.Controls.Add(this.button_п);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.button_equal);
-            this.Controls.Add(this.button15);
-            this.Controls.Add(this.button16);
-            this.Controls.Add(this.button17);
-            this.Controls.Add(this.button18);
-            this.Controls.Add(this.button19);
-            this.Controls.Add(this.button20);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button_plus_minus);
-            this.Controls.Add(this.button_C);
-            this.Controls.Add(this.button_CE);
             this.Controls.Add(this.result);
-            this.Controls.Add(this.button_Clear);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -916,12 +922,14 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.Date_groupBox.ResumeLayout(false);
+            this.Date_groupBox.PerformLayout();
+            this.Unit_Conversion_groupBox.ResumeLayout(false);
+            this.Unit_Conversion_groupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.Scientific_groupBox.ResumeLayout(false);
+            this.Standard_groupBox.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -956,6 +964,28 @@
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Label equation;
+        private System.Windows.Forms.GroupBox Date_groupBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btn_cal;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label difference_two_dates_value;
+        private System.Windows.Forms.GroupBox Unit_Conversion_groupBox;
+        private System.Windows.Forms.Label answer;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Button button_reset;
+        private System.Windows.Forms.Button button_convert_to_KGs;
+        private System.Windows.Forms.Button button_convert_to_pounds;
+        private System.Windows.Forms.ToolStripMenuItem historyToolStripMenuItem;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.GroupBox Scientific_groupBox;
+        private System.Windows.Forms.GroupBox Standard_groupBox;
         private System.Windows.Forms.Button button_percent;
         private System.Windows.Forms.Button button_Oct;
         private System.Windows.Forms.Button button23;
@@ -976,26 +1006,6 @@
         private System.Windows.Forms.Button button_Sqrt;
         private System.Windows.Forms.Button button_Log;
         private System.Windows.Forms.Button button_п;
-        private System.Windows.Forms.Label equation;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button btn_cal;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label difference_two_dates_value;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label answer;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Button button_reset;
-        private System.Windows.Forms.Button button_convert_to_KGs;
-        private System.Windows.Forms.Button button_convert_to_pounds;
-        private System.Windows.Forms.ToolStripMenuItem historyToolStripMenuItem;
-        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
