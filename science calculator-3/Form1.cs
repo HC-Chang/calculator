@@ -309,26 +309,35 @@ namespace science_calculator_3
         {
             this.Width = 950;
             result.Width = 370;
+            switch (groupBox2.Visible)
+            {
+                case true:
+                    groupBox2.Visible = false;
+                    break;
+                case false:
+                    groupBox2.Visible = true;
+                    break;
+            }
         }
 
-        private void historyToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            historyToolStripMenuItem.Visible = true;
-            listBox1.Width = 420;
-            listBox1.Visible = false;
-            this.Height = 320;
-            historyToolStripMenuItem1.Visible = false;
-        }
 
         private void historyToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // 無到有
             if (historyToolStripMenuItem.Checked == true)
             {
+                listBox1.Width = 420;
                 listBox1.Visible = true;
-                historyToolStripMenuItem.Visible = false;
-                historyToolStripMenuItem.Visible = true;
-                this.Height = 320;
+                historyToolStripMenuItem.Checked = true;
             }
+            // 有到無
+            else
+            {
+                historyToolStripMenuItem.Checked = false;
+                
+                listBox1.Visible = false;
+            }
+            this.Height = 320;
         }
     }
 }

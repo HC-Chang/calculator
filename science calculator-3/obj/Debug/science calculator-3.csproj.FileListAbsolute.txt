@@ -16,3 +16,19 @@ C:\Users\ASUSUX410-ELAINE\Documents\Visual Studio 2017\Projects\science calculat
 C:\Users\ASUSUX410-ELAINE\Documents\Visual Studio 2017\Projects\science calculator-3 - 複製\science calculator-3\bin\Debug\science calculator-3.exe.config
 C:\Users\ASUSUX410-ELAINE\Documents\Visual Studio 2017\Projects\science calculator-3 - 複製\science calculator-3\bin\Debug\science calculator-3.exe
 C:\Users\ASUSUX410-ELAINE\Documents\Visual Studio 2017\Projects\science calculator-3 - 複製\science calculator-3\bin\Debug\science calculator-3.pdb
+D:\Git\calculator\science calculator-3\bin\Debug\science calculator-3.exe.config
+D:\Git\calculator\science calculator-3\obj\Debug\science calculator-3.exe
+D:\Git\calculator\science calculator-3\obj\Debug\science calculator-3.pdb
+D:\Git\calculator\science calculator-3\bin\Debug\science calculator-3.exe
+D:\Git\calculator\science calculator-3\bin\Debug\science calculator-3.pdb
+D:\Git\calculator\science calculator-3\bin\Debug\mscorlib.dll
+D:\Git\calculator\science calculator-3\bin\Debug\zh-Hant\mscorlib.resources.dll
+D:\Git\calculator\science calculator-3\bin\Debug\normidna.nlp
+D:\Git\calculator\science calculator-3\bin\Debug\normnfc.nlp
+D:\Git\calculator\science calculator-3\bin\Debug\normnfd.nlp
+D:\Git\calculator\science calculator-3\bin\Debug\normnfkc.nlp
+D:\Git\calculator\science calculator-3\bin\Debug\normnfkd.nlp
+D:\Git\calculator\science calculator-3\obj\Debug\science calculator-3.csprojResolveAssemblyReference.cache
+D:\Git\calculator\science calculator-3\obj\Debug\science_calculator_3.Form1.resources
+D:\Git\calculator\science calculator-3\obj\Debug\science_calculator_3.Properties.Resources.resources
+D:\Git\calculator\science calculator-3\obj\Debug\science calculator-3.csproj.GenerateResource.Cache
