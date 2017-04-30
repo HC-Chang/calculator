@@ -1,0 +1,18 @@
+c:\users\asusux410-elaine\documents\visual studio 2017\Projects\science calculator-3\science calculator-3\bin\Debug\science calculator-3.exe.config
+c:\users\asusux410-elaine\documents\visual studio 2017\Projects\science calculator-3\science calculator-3\bin\Debug\science calculator-3.exe
+c:\users\asusux410-elaine\documents\visual studio 2017\Projects\science calculator-3\science calculator-3\bin\Debug\science calculator-3.pdb
+c:\users\asusux410-elaine\documents\visual studio 2017\Projects\science calculator-3\science calculator-3\obj\Debug\science_calculator_3.Form1.resources
+c:\users\asusux410-elaine\documents\visual studio 2017\Projects\science calculator-3\science calculator-3\obj\Debug\science_calculator_3.Properties.Resources.resources
+c:\users\asusux410-elaine\documents\visual studio 2017\Projects\science calculator-3\science calculator-3\obj\Debug\science calculator-3.csproj.GenerateResource.Cache
+c:\users\asusux410-elaine\documents\visual studio 2017\Projects\science calculator-3\science calculator-3\obj\Debug\science calculator-3.exe
+c:\users\asusux410-elaine\documents\visual studio 2017\Projects\science calculator-3\science calculator-3\obj\Debug\science calculator-3.pdb
+c:\users\asusux410-elaine\documents\visual studio 2017\Projects\science calculator-3\science calculator-3\obj\Debug\science calculator-3.csprojResolveAssemblyReference.cache
+C:\Users\ASUSUX410-ELAINE\Documents\Visual Studio 2017\Projects\science calculator-3 - 複製\science calculator-3\obj\Debug\science calculator-3.csprojResolveAssemblyReference.cache
+C:\Users\ASUSUX410-ELAINE\Documents\Visual Studio 2017\Projects\science calculator-3 - 複製\science calculator-3\obj\Debug\science_calculator_3.Form1.resources
+C:\Users\ASUSUX410-ELAINE\Documents\Visual Studio 2017\Projects\science calculator-3 - 複製\science calculator-3\obj\Debug\science_calculator_3.Properties.Resources.resources
+C:\Users\ASUSUX410-ELAINE\Documents\Visual Studio 2017\Projects\science calculator-3 - 複製\science calculator-3\obj\Debug\science calculator-3.csproj.GenerateResource.Cache
+C:\Users\ASUSUX410-ELAINE\Documents\Visual Studio 2017\Projects\science calculator-3 - 複製\science calculator-3\obj\Debug\science calculator-3.exe
+C:\Users\ASUSUX410-ELAINE\Documents\Visual Studio 2017\Projects\science calculator-3 - 複製\science calculator-3\obj\Debug\science calculator-3.pdb
+C:\Users\ASUSUX410-ELAINE\Documents\Visual Studio 2017\Projects\science calculator-3 - 複製\science calculator-3\bin\Debug\science calculator-3.exe.config
+C:\Users\ASUSUX410-ELAINE\Documents\Visual Studio 2017\Projects\science calculator-3 - 複製\science calculator-3\bin\Debug\science calculator-3.exe
+C:\Users\ASUSUX410-ELAINE\Documents\Visual Studio 2017\Projects\science calculator-3 - 複製\science calculator-3\bin\Debug\science calculator-3.pdb
